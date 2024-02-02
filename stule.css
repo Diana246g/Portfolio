@@ -1,0 +1,147 @@
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .title::after {
+    width: 116px;
+  }
+  .title::before {
+    width: 116px;
+  }
+
+  .header__logo {
+    margin-left: 60px;
+  }
+  .header {
+    background-color: #000;
+  }
+
+  .header__burger {
+    margin-right: 64px;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .header__burger span {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before,
+  .header__burger::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-dark);
+    padding: 100px 10px 20px 10px;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+  }
+  .header__nav.active {
+    top: 0;
+    height: 100%;
+  }
+  .header__list {
+    display: block;
+  }
+
+  .container {
+    width: 768px;
+    height: 590px;
+    background-size: cover;
+  }
+
+  .hero__title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 64px;
+  }
+
+  .hero__content {
+    max-width: 390px;
+    margin-left: 60px;
+    margin-top: 108px;
+  }
+
+  .hero__text {
+    width: 390px;
+    font-size: 19px;
+    line-height: 24px;
+    margin: 15px auto 40px;
+  }
+
+  .hero__button {
+    width: 219px;
+    height: 54px;
+  }
+
+  .skills__h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .skills__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .portfolio__section {
+    width: 728px;
+    height: 520px;
+    top: 196px;
+    left: 20px;
+  }
+  .portfolio__text {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 80px;
+  }
+  .video-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 80px;
+  }
+  .section-title {
+    /* font-size: ; */
+    font-weight: 2px;
+    line-height: 700px;
+  }
+}
